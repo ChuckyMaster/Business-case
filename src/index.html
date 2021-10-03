@@ -4,10 +4,63 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/dist/css" />
+    <link rel="stylesheet" href="/dist/CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="/dist/CSS/style.css" />
+
     <title>La Nîmes'Alerie</title>
   </head>
   <body>
-    <h1>TEST</h1>
+    <nav class="row align-items-center">
+      <img
+        class="col-md-2 w-md-25 p-0"
+        src="/src/icone/logo-test.svg"
+        alt="logo-main"
+      />
+
+      <ul
+        class="
+          col-12 col-md-10
+          justify-content-between
+          d-flex
+          align-items-end
+          mt-4
+        "
+      >
+        <li>
+          <form action=" GET">
+            <input type="search" name="search" placeholder="Chercher" />
+          </form>
+        </li>
+        <li><a href="#"> Shop </a></li>
+        <li><a href="#"> Top seller</a></li>
+        <li><a href="#"> Sign in</a></li>
+        <li><a href="#" class="button"> Log-in</a></li>
+        <li><a href="#" class="button"> My account</a></li>
+        <li>
+          <a href="#">
+            <img class="w-75" src="/src/icone/basket.svg" alt="basket" />
+            <br />
+            <small> view </small></a
+          >
+        </li>
+      </ul>
+    </nav>
+    <header class="container-fluid">
+      <!--  fin nav -->
+
+      <div class="welcome">
+        <h1>
+          Bienvenue à La Nîmes'Alerie <br />
+          La boutique <strong> préférée</strong> de nos compagnions !
+        </h1>
+      </div>
+    </header>
+    <!-- fin header -->
+
+    <section id="espace"></section>
+
+    <!-- script bootsrap JS -->
+    <script src="/dist/bootstrap.bundle.js"></script>
+    <!-- Fin script bootsrap js -->
   </body>
 </html>

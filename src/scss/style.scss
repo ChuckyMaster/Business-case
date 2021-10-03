@@ -1,7 +1,63 @@
-h1 {
-  color: red;
-}
+@import "variables";
+@import "bases";
+@import "classes";
 
-p {
-  color: green;
+nav {
+  ul {
+    input {
+      width: 350px;
+      height: 35px;
+      margin-left: 50px;
+      border-radius: 50px;
+      border: none;
+      box-shadow: $shadow-main;
+    }
+
+    li {
+      a {
+        &:not(.button)::after {
+          content: "";
+          position: absolute;
+
+          width: 85px;
+          height: 4px;
+          background-color: $main-blue;
+          bottom: -1px;
+          left: 30px;
+          margin: 30px 0 0 0;
+        }
+      }
+      padding: 10px;
+      position: relative;
+    }
+  }
+}
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.795), #1672877e),
+    url(/src/img/peacock-1.jfif);
+  background-position: center;
+  background-size: cover;
+  height: 550px;
+  object-fit: cover;
+  object-position: 80%;
+
+  .welcome {
+    height: 350px;
+    display: flex;
+    max-width: 1060px;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: $white-cream;
+
+    h1 {
+      text-align: center;
+      font-size: 50px;
+
+      strong {
+        color: $blue-sky;
+      }
+    }
+  }
 }
