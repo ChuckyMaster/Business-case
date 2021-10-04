@@ -23,11 +23,17 @@ h2 {
 }
 
 .button {
-  background-color: #167387;
-  color: white;
   padding: 7px 12px;
   border-radius: 20px;
   text-align: center;
+}
+.button-main-orange {
+  background-color: #de7b23;
+  color: white;
+}
+.button-blue {
+  background-color: #167387;
+  color: white;
 }
 
 nav {
@@ -61,12 +67,12 @@ nav ul li {
 nav ul li a {
   text-align: right;
 }
-nav ul li a.barre::after {
+nav ul li a::after {
   content: "";
   position: absolute;
   width: 50px;
-  height: 4px;
-  background-color: #167387;
+  height: 3px;
+  background-color: #de7b23;
   bottom: 35px;
   left: 0px;
   margin: 15px 0 0 0;
@@ -94,8 +100,8 @@ header .welcome h1 {
   text-align: center;
   font-size: 50px;
 }
-header .welcome h1 strong {
-  color: #a4ebf3;
+header .welcome h1 span {
+  color: #ba2b0b;
 }
 
 #espace {

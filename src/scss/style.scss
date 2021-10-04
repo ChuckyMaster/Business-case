@@ -30,13 +30,13 @@ nav {
     li {
       a {
         text-align: right;
-        &.barre::after {
+        &::after {
           content: "";
           position: absolute;
 
           width: 50px;
-          height: 4px;
-          background-color: $main-blue;
+          height: 3px;
+          background-color: $orange-light;
           bottom: 35px;
           left: 0px;
           margin: 15px 0 0 0;
@@ -70,8 +70,8 @@ header {
       text-align: center;
       font-size: 50px;
 
-      strong {
-        color: $blue-sky;
+      span {
+        color: $orange;
       }
     }
   }
