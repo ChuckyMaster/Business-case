@@ -6,34 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/dist/CSS/bootstrap.min.css" />
     <link rel="stylesheet" href="/dist/CSS/style.css" />
+    <script
+      src="https://kit.fontawesome.com/89fe9bcfac.js"
+      crossorigin="anonymous"
+    ></script>
 
     <title>La Nîmes'Alerie</title>
   </head>
   <body>
-    <nav class="row align-items-center">
-      <img
-        class="col-md-2 w-md-25 p-0"
-        src="/src/icone/logo-test.svg"
-        alt="logo-main"
-      />
+    <nav>
+      <img src="/src/icone/logo-test.svg" alt="logo-main" />
 
-      <ul
-        class="
-          col-12 col-md-10
-          justify-content-between
-          d-flex
-          align-items-end
-          mt-4
-        "
-      >
+      <ul>
         <li>
           <form action=" GET">
             <input type="search" name="search" placeholder="Chercher" />
           </form>
         </li>
-        <li><a href="#"> Shop </a></li>
-        <li><a href="#"> Top seller</a></li>
-        <li><a href="#"> Sign in</a></li>
+        <li><a href="#" class="barre"> Shop </a></li>
+        <li><a href="#" class="barre"> Top seller</a></li>
+        <li><a href="#" class="barre"> Sign in</a></li>
         <li><a href="#" class="button"> Log-in</a></li>
         <li><a href="#" class="button"> My account</a></li>
         <li>
@@ -57,7 +49,242 @@
     </header>
     <!-- fin header -->
 
-    <section id="espace"></section>
+    <section id="espace">
+      <ul>
+        <li><img src="/src/icone/catbaute2.svg" alt="chatnaute" /></li>
+        <li><p>Envoyez Votre Animal Sur l'espace</p></li>
+        <li><a href="#" class="button"> VOIR</a></li>
+      </ul>
+    </section>
+    <!-- Fin section espace -->
+
+    <main>
+      <div class="container">
+        <div class="menu-lien row">
+          <ul class="d-flex justify-content-between">
+            <li><p>Select Categories</p></li>
+            <li><a href="#"> Show All</a></li>
+          </ul>
+        </div>
+
+        <div class="menu-icone">
+          <ul class="d-flex justify-content-between">
+            <li>
+              <a href="#">
+                <img src="/src/icone/gamelle.svg" alt="" />
+                <p>Food</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="/src/icone/hamster.svg" alt="" />
+                <p>Rodent</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="/src/icone/catNormal.svg" alt="" />
+                <p>Cat</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="/src/icone/dogNormal.svg" alt="" />
+                <p>Dog</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="/src/icone/fish.svg" alt="" />
+                <p>Fish</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="/src/icone/salamander.svg" alt="" />
+                <p>Reptile</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="/src/icone/beautypet.svg" alt="" />
+                <p>Care</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="/src/icone/box.svg" alt="" />
+                <p>Toys</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="/src/icone/collar2.svg" alt="" />
+                <p>Accessory</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Fin barre menu -->
+
+      <!--  BEST seller cards -->
+
+      <section id="best-seller">
+        <div class="container">
+          <div class="row">
+            <h2 class="text-center">best-seller</h2>
+
+            <!-- Debut card -->
+            <article
+              class="text-center align-item-center col-12 col-md-3 p-1 pb-4 d"
+            >
+              <i class="fas fa-heart"></i>
+              <img
+                class="img-fluid w-50"
+                src="/src/img/sac-chat-obesity-8kg.png"
+                alt="obesity"
+              />
+              <h4>Promesse Grain Obesity</h4>
+              <p>
+                <small>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing
+                  elit.</small
+                >
+              </p>
+              <hr />
+
+              <p class="price fs-5 mt-3 p-0">$49.99</p>
+
+              <ul class="d-flex justify-content-center mb-4">
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+              </ul>
+              <a href="#" class="button"> Add</a>
+              <a href="#" class="button">View</a>
+            </article>
+
+            <article
+              class="text-center align-item-center col-12 col-md-3 p-1 pb-4 d"
+            >
+              <i class="fas fa-heart"></i>
+              <img
+                class="img-fluid w-50"
+                src="/src/img/sac-chat-obesity-8kg.png"
+                alt="obesity"
+              />
+              <h4>Promesse Grain Obesity</h4>
+              <p>
+                <small>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing
+                  elit.</small
+                >
+              </p>
+              <hr />
+
+              <p class="price fs-5 mt-3 p-0">$49.99</p>
+
+              <ul class="d-flex justify-content-center mb-4">
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+              </ul>
+              <a href="#" class="button"> Add</a>
+              <a href="#" class="button">View</a>
+            </article>
+            <article
+              class="text-center align-item-center col-12 col-md-3 p-1 pb-4 d"
+            >
+              <i class="fas fa-heart"></i>
+              <img
+                class="img-fluid w-50"
+                src="/src/img/sac-chat-obesity-8kg.png"
+                alt="obesity"
+              />
+              <h4>Promesse Grain Obesity</h4>
+              <p>
+                <small>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing
+                  elit.</small
+                >
+              </p>
+              <hr />
+
+              <p class="price fs-5 mt-3 p-0">$49.99</p>
+
+              <ul class="d-flex justify-content-center mb-4">
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+              </ul>
+              <a href="#" class="button"> Add</a>
+              <a href="#" class="button">View</a>
+            </article>
+            <article
+              class="text-center align-item-center col-12 col-md-3 p-1 pb-4 d"
+            >
+              <i class="fas fa-heart"></i>
+              <img
+                class="img-fluid w-50"
+                src="/src/img/sac-chat-obesity-8kg.png"
+                alt="obesity"
+              />
+              <h4>Promesse Grain Obesity</h4>
+              <p>
+                <small>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing
+                  elit.</small
+                >
+              </p>
+              <hr />
+
+              <p class="price fs-5 mt-3 p-0">$49.99</p>
+
+              <ul class="d-flex justify-content-center mb-4">
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+              </ul>
+              <a href="#" class="button"> Add</a>
+              <a href="#" class="button">View</a>
+            </article>
+
+            <!-- fin card -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Fin card best seller -->
+
+      <section id="form-join">
+        <div class="container">
+          <div class="row">
+            <div class="slogan col-md-6">
+              QUICK JOIN AND GET 40% <br />
+              FOR YOUR FIRST ORDER
+            </div>
+
+            <form action="GET" class="col-md-6">
+              <label for="name"> Name</label>
+              <input type="text" name="name" />
+              <label for="Last Name"> Last Name</label>
+              <input type="text" name="Last Name" />
+              <label for="email"> E-mail</label>
+              <input type="e-mail" name="email" />
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!-- script bootsrap JS -->
     <script src="/dist/bootstrap.bundle.js"></script>

@@ -4,8 +4,9 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-li {
+ul {
   list-style: none;
+  padding: 0;
 }
 
 a {
@@ -17,6 +18,10 @@ h1 {
   font-family: "Purple Purse", cursive;
 }
 
+h2 {
+  text-transform: uppercase;
+}
+
 .button {
   background-color: #167387;
   color: white;
@@ -25,6 +30,22 @@ h1 {
   text-align: center;
 }
 
+nav {
+  z-index: 99999;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  background-color: #f4f9f9;
+}
+nav ul {
+  display: flex;
+  width: 1060px;
+  margin: auto;
+  justify-content: space-between;
+}
 nav ul input {
   width: 350px;
   height: 35px;
@@ -37,15 +58,18 @@ nav ul li {
   padding: 10px;
   position: relative;
 }
-nav ul li a:not(.button)::after {
+nav ul li a {
+  text-align: right;
+}
+nav ul li a.barre::after {
   content: "";
   position: absolute;
-  width: 85px;
+  width: 50px;
   height: 4px;
   background-color: #167387;
-  bottom: -1px;
-  left: 30px;
-  margin: 30px 0 0 0;
+  bottom: 35px;
+  left: 0px;
+  margin: 15px 0 0 0;
 }
 
 header {
@@ -72,6 +96,74 @@ header .welcome h1 {
 }
 header .welcome h1 strong {
   color: #a4ebf3;
+}
+
+#espace {
+  height: auto;
+  box-shadow: 0px 1px 8px #b2b2b2;
+  background-color: #f4f9f9;
+}
+#espace ul {
+  display: flex;
+  max-width: 1060px;
+  margin: auto;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+#espace ul li p {
+  font-size: 25px;
+  margin-top: 15px;
+}
+#espace ul li img {
+  width: 70px;
+  color: #167387;
+}
+
+main .container {
+  margin-top: 70px;
+}
+main .container .menu-icone ul li {
+  display: flex;
+}
+main .container .menu-icone ul li a {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+main .container .menu-icone ul li a p {
+  padding: 8px;
+}
+
+#best-seller article {
+  position: relative;
+  flex-direction: column;
+  max-width: 300px;
+  background-color: #e2dede;
+  margin: 25px 20px 0 0;
+}
+#best-seller article hr {
+  width: 50%;
+  margin: auto;
+}
+#best-seller article .fa-heart {
+  position: absolute;
+  font-size: 45px;
+  color: #8f1212;
+  right: 35px;
+  top: 25px;
+}
+#best-seller article ul {
+  color: #dfdf11;
+}
+#best-seller article a {
+  margin: 0 10px;
+}
+
+#form-join {
+  height: 400px;
+  background: linear-gradient(45deg, #167387, #ccf2f4);
 }
 
 /*# sourceMappingURL=style.css.map */

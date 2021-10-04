@@ -2,8 +2,22 @@
 @import "bases";
 @import "classes";
 
+// Header ---------------nav-------------------------//
 nav {
+  z-index: 99999;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  background-color: $white-cream;
   ul {
+    display: flex;
+    width: 1060px;
+    margin: auto;
+    justify-content: space-between;
+
     input {
       width: 350px;
       height: 35px;
@@ -15,16 +29,17 @@ nav {
 
     li {
       a {
-        &:not(.button)::after {
+        text-align: right;
+        &.barre::after {
           content: "";
           position: absolute;
 
-          width: 85px;
+          width: 50px;
           height: 4px;
           background-color: $main-blue;
-          bottom: -1px;
-          left: 30px;
-          margin: 30px 0 0 0;
+          bottom: 35px;
+          left: 0px;
+          margin: 15px 0 0 0;
         }
       }
       padding: 10px;
@@ -60,4 +75,97 @@ header {
       }
     }
   }
+}
+
+// Bandeau espace //
+
+#espace {
+  height: auto;
+  box-shadow: $shadow-main;
+  background-color: $white-cream;
+
+  ul {
+    display: flex;
+    max-width: 1060px;
+    margin: auto;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    li {
+      p {
+        font-size: 25px;
+        margin-top: 15px;
+      }
+      img {
+        width: 70px;
+        color: $main-blue;
+      }
+    }
+  }
+}
+
+//  Debut main //
+
+// Partie barre de menu categorie //
+main .container {
+  margin-top: 70px;
+  .menu-lien {
+    ul {
+    }
+  }
+
+  .menu-icone {
+    ul {
+      li {
+        display: flex;
+        a {
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+          padding: 10px;
+          p {
+            padding: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+
+//  Best - Seller  //
+#best-seller {
+  //  CARD //
+  article {
+    position: relative;
+    flex-direction: column;
+
+    max-width: 300px;
+    background-color: $grey-light;
+    margin: 25px 20px 0 0;
+    hr {
+      width: 50%;
+      margin: auto;
+    }
+    .fa-heart {
+      position: absolute;
+      font-size: 45px;
+      color: rgb(143, 18, 18);
+      right: 35px;
+      top: 25px;
+    }
+
+    ul {
+      color: rgb(223, 223, 17);
+    }
+    a {
+      margin: 0 10px;
+    }
+  }
+}
+
+//  PARTIE FORM QUICK JOIN //
+
+#form-join {
+  height: 400px;
+  background: linear-gradient(45deg, #167387, #ccf2f4);
 }
